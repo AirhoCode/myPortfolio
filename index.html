@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Airho.dev">
+    <meta name="description" content="My Portfolio as a Junior Web Developer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="aboutpage.css">
+    <link rel="stylesheet" href="projectpage.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src="main.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('6tdgW0ERFFiKXTOfH');
+        })();
+    </script>
+    <title>Airho Code | Web Developer</title>
+</head>
+
+<body>
+    <header>
+        <!-- NAVIGATION -->
+            <nav>
+                <input id="nav-toggle" type="checkbox">
+                <div class="nav-logo">AIRHO<strong>CODE</strong></div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#project">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <label for="nav-toggle" class="nav-icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+            </nav>
+    </header>
+    
+    <main>
+        <!-- HOME -->
+        <article id="home">
+
+            <section class="home-img">
+                <div class="home-pic">
+                    <div class="home-filter"></div>
+                </div>
+            </section>
+
+
+            <section class="home-content">
+                <div class="home-text">
+                    <h1>I'm Airho</h1>
+                    <p>a passionate web designer <span>and developer.</span></p>
+                </div>
+
+                <div class="home-links">
+                    <a href="https://www.linkedin.com/in/airho-code/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/AirhoCode" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/airhoooo" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/airho.e/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+    
+    
+                <div class="home-skills">
+                    <p>Tech Stack</p>
+                    <ul>
+                        <li>
+                            <i class="fa-brands fa-html5"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-js"></i>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </article>
+
+        <!-- ABOUT -->
+        <article id="about">
+            
+            <section class="about-img">
+                <div class="about-imgFilter"></div>
+            </section>
+
+
+            <section class="about-content">
+                <h2>ABOUT ME</h2>
+                <div class="about-container">
+                    <h1>I'm a <span class="auto-type"></span></h1>
+                </div>
+                <p>As a junior web developer, I possess solid skills in HTML, CSS, and JS. With a keen eye for design and a passion for creating engaging user experiences, I strive to craft clean and responsive websites. Eager to learn and collaborate, I am committed to continuously expanding my knowledge and delivering high-quality code. Let's build something amazing together!</p>
+            </section>
+            
+        </article>
+
+        <!-- PROJECT -->
+        <article id="project">
+
+            <h1>PROJECTS</h1>
+            <p>none</p>
+
+        </article>
+
+        <!-- CONTACT -->
+        <article id="contact">
+
+            <section class="contact-title">
+                <h1>CONTACT</h1>
+                <p>Have a question or want to <span class="contact-nowrap">work together?</span></p>
+            </section>
+
+
+            <section class="contact-form">
+                <input id="fullName" type="text" placeholder="Name" required>
+                <input id="email_id" type="email" placeholder="Email" required>
+                <textarea id="message" required placeholder="Your Message"></textarea>
+                <button onclick="SendMail()"><i class="fa-regular fa-paper-plane"></i> Send</button>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <section class="footer-copyright">
+            <p>© 2023 AIRHO<strong>CODE</strong></p>
+        </section>
+
+
+        <section class="footer-links">
+            <a href="https://www.linkedin.com/in/airho-code/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/AirhoCode" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/airhoooo" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/airho.e/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </section>
+
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Developer", "Designer", "Problem solver", "Freelancer"],
+            typeSpeed: 100, 
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>

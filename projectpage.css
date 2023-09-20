@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* COLOR */
+    --BG-COLOR1: #fff;
+    --BG-COLOR2: #f9f9f9;
+    --DARK-COLOR: #333;
+    --MAIN-COLOR1: #CBE4DE;
+    --MAIN-COLOR2: #0E8388;
+    --MAIN-COLOR3: #2E4F4F;
+    --MAIN-COLOR4: #2C3333;
+    --DARK-COLOR: #333;
+
+    /* FONTS */
+    --FF1: 'Poppins', sans-serif;
+    --FF2: 'Mulish', sans-serif;
+
+    /* GENERAL */
+    --SHADOW1: 0 0 10px rgba(0,0,0,.09);
+}
+
+#project {
+    background-color: var(--BG-COLOR2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
